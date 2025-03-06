@@ -1,10 +1,12 @@
 using UnityEngine;
 
-public class JumpBuff : PowerupEffects
+public class JumpBuff : MonoBehaviour
 {
-    public float JumpingPower;
-    public override void Apply(GameObject target)
+    public void Apply(GameObject target)
     {
-        target.GetComponent<Movement>().SetJumpingPower();
+        if (target == null)//if my player coordinate are equal to the powerup location it will activate
+        {
+            target.GetComponent<Movement>().SetJumpingPower();
+        }
     }
 }

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    private float speed = 30f;
+    private float speed = 25f;
     private float horizontal;
     private float jumpingPower = 20f;
     private bool isFacingRight;
@@ -49,7 +49,7 @@ public class Movement : MonoBehaviour
     }
     public void SetJumpingPower()
     {
-        jumpingPower = 30;
+    jumpingPower = 30;
     }
 }
 

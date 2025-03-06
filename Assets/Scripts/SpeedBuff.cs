@@ -1,11 +1,13 @@
 using UnityEngine;
 
-public class SpeedBuff : PowerupEffects
+public class SpeedBuff : MonoBehaviour
 {
-    public float Speed;
-    public override void Apply(GameObject target)
+    public void Apply(GameObject target)
     {
-        target.GetComponent<Movement>().SetSpeed();
+        if (target == null)
+        {
+            target.GetComponent<Movement>().SetSpeed();
+        }
     }
 }
 //in mijn movement class heb ik een class die de speed regeld die wil ik veranderen met deze powerup functie
