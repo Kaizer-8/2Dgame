@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    private float speed = 20f;
+    private float speed = 25f;
     private float horizontal;
-    private float jumpingPower = 16f;
+    private float jumpingPower = 20f;
     private bool isFacingRight;
 
     [SerializeField] private Rigidbody2D rb;
@@ -43,4 +43,14 @@ public class Movement : MonoBehaviour
             transform.localScale = localScale;
         }
     }
+    public void SetSpeed()
+    {
+    speed = 50;
+    }
+    public void SetJumpingPower()
+    {
+    jumpingPower = 30;
+    }
 }
+
+
