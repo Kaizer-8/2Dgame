@@ -4,7 +4,7 @@ public class Movement : MonoBehaviour
 {
     private float speed = 25f;
     private float horizontal;
-    private float jumpingPower = 20f;
+    private float jumpingPower = 100f;
     private bool isFacingRight;
 
     [SerializeField] private Rigidbody2D rb;
@@ -43,9 +43,9 @@ public class Movement : MonoBehaviour
             transform.localScale = localScale;
         }
     }
-    public void SetSpeed()
+    public void SetSpeed(float newSpeed)
     {
-    speed = 50;
+    speed = newSpeed;
     }
     public void SetJumpingPower()
     {

@@ -1,6 +1,7 @@
 using UnityEngine;
-
-public abstract class PowerupEffects : ScriptableObject
+[CreateAssetMenu(menuName ="Playermovement")]
+public class PowerupEffects : ScriptableObject
 {
-    public abstract void Apply (GameObject target);
+    public int PlayerSpeed;
+    public int JumpingPower; 
 }
