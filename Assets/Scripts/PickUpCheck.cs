@@ -1,16 +1,21 @@
+using NUnit.Framework;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering;
+using static UnityEngine.GraphicsBuffer;
 
 public class PickUpCheck : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    bool ColliderCheck = false;
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        {
+            if (!ColliderCheck)
+            {
+                collision.gameObject.GetComponent<Movement>().SetJumpingPower();
+                Destroy(gameObject);
+            }
+        }
+        ColliderCheck = true;
     }
 }

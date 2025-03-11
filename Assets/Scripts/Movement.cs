@@ -4,7 +4,7 @@ public class Movement : MonoBehaviour
 {
     private float speed = 25f;
     private float horizontal;
-    private float jumpingPower = 100f;
+    private float jumpingPower = 20f;
     private bool isFacingRight;
 
     [SerializeField] private Rigidbody2D rb;
@@ -49,8 +49,9 @@ public class Movement : MonoBehaviour
     }
     public void SetJumpingPower()
     {
-    jumpingPower = 30;
+    jumpingPower = 32;
     }
 }
+//op het bewegende platform mijn positie van de player op dezelfde speed omlaag zetten als het platform zodat je dat gebounc niet krijg
 
 
