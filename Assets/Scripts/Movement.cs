@@ -43,14 +43,15 @@ public class Movement : MonoBehaviour
             transform.localScale = localScale;
         }
     }
-    public void SetSpeed()
+    public void SetSpeed(float newSpeed)
     {
-    speed = 50;
+    speed = newSpeed;
     }
     public void SetJumpingPower()
     {
-    jumpingPower = 30;
+    jumpingPower = 32;
     }
 }
+//op het bewegende platform mijn positie van de player op dezelfde speed omlaag zetten als het platform zodat je dat gebounc niet krijg
 
 

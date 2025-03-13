@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlatFormMoveUp : MonoBehaviour
@@ -9,7 +10,7 @@ public class PlatFormMoveUp : MonoBehaviour
     {
         
     }
-    void Update()
+    private void FixedUpdate()
     {
         transform.position = Vector2.MoveTowards(transform.position, points[index].position,speed * Time.deltaTime);
 
@@ -22,5 +23,33 @@ public class PlatFormMoveUp : MonoBehaviour
             index = 0;  
         }
     }
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        collision.gameObject.transform.SetParent(this.gameObject.transform);
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        collision.gameObject.transform.SetParent(null);
+    }
 }
 //beweegt het platform tussen 2 punten
+/*maakt de player gelijk aan het platform zodat hij mee gaat met het platform.
+ * zodra de player weg is staat de player 
+ *     private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            collision.transform.parent = this.transform;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("player"))
+        {
+            collision.transform.parent = null;
+        }
+    }
+ */
