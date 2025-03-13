@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    private float speed = 25f;
+    private float speed = 15f;
     private float horizontal;
     private float jumpingPower = 20f;
     private bool isFacingRight;
@@ -31,7 +31,7 @@ public class Movement : MonoBehaviour
     }
     private bool IsGrounded()
     {
-        return Physics2D.OverlapCircle(groundCheck.position,0.2f,groundLayer);
+        return Physics2D.OverlapCircle(groundCheck.position,0.5f,groundLayer);
     }
     private void flip()
     {
@@ -49,7 +49,7 @@ public class Movement : MonoBehaviour
     }
     public void SetJumpingPower()
     {
-    jumpingPower = 32;
+    jumpingPower = 30;
     }
 }
 //op het bewegende platform mijn positie van de player op dezelfde speed omlaag zetten als het platform zodat je dat gebounc niet krijg
