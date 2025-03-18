@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Movement : MonoBehaviour
 {
     private float speed = 15f;
@@ -51,6 +51,13 @@ public class Movement : MonoBehaviour
     {
     jumpingPower = 30;
     }
+    //private void OnCollisionEnter2D(Collision2D other)
+    //{
+    //        if (Input.GetKey("1"))
+    //        {
+    //            SceneManager.LoadScene(1);
+    //        }
+    //}
 }
 //op het bewegende platform mijn positie van de player op dezelfde speed omlaag zetten als het platform zodat je dat gebounc niet krijg
 
