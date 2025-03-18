@@ -5,23 +5,19 @@ public class FinshLine : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        //comparing the 2 tags of the player and finishline and then the input.getkeydown and scenmaneger??
+       //comparing the 2 tags of the player and finishline and thn 
     }
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnCollisionStay2D(Collision2D collision)
     {
-        while (true)
+    if (Input.GetKey(KeyCode.K))
         {
-            Debug.Log("hallo");
-            if (Input.GetKey(KeyCode.K))
-            { //collider of je op een object staat dan de code?
-                SceneManager.LoadScene(1);
-            }
+             SceneManager.LoadScene(1);
         }
     }
 }

@@ -5809,6 +5809,7 @@ GameObject:
   - component: {fileID: 1549374593}
   - component: {fileID: 1549374592}
   - component: {fileID: 1549374591}
+  - component: {fileID: 1549374594}
   m_Layer: 0
   m_Name: Square (1)
   m_TagString: FinishLine
@@ -5932,6 +5933,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1549374594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549374590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54730d354e5f09644a77521614f67d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1560944125
 GameObject:
   m_ObjectHideFlags: 0
