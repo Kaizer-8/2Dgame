@@ -11,7 +11,7 @@ public class SpikeScript : MonoBehaviour
         
     }
     private void OnCollisionEnter2D(Collision2D other)
-    {
+    { // checks if the player collids with the spikes and sets the player to the respawnpoint.
         if (other.gameObject.CompareTag("Player"))
         {
             player.transform.position = respawnpoint.position;
