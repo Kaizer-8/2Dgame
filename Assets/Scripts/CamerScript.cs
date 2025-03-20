@@ -11,7 +11,7 @@ public class CamerScript : MonoBehaviour
     private Vector3 vel = Vector3.one;
 
     private void Update()
-    {
+    { // sets the camera to targetposition wich is the player.
         Vector3 targetposition = target.position + offset;
         targetposition.z = transform.position.z;
 

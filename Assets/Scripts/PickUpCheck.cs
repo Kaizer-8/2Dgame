@@ -11,7 +11,7 @@ public class PickUpCheck : MonoBehaviour
     {
         {
             if (!ColliderCheck)
-            {
+            { // checks if the player collids with the object and from the movement script grabs the jump variable and sets it to setjumpingpower
                 collision.gameObject.GetComponent<Movement>().SetJumpingPower();
                 Destroy(gameObject);
             }

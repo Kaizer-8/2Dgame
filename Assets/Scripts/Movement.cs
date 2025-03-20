@@ -32,7 +32,7 @@ public class Movement : MonoBehaviour
     private bool IsGrounded()
     {
         return Physics2D.OverlapCircle(groundCheck.position,0.5f,groundLayer);
-    }
+    } // checks if the player is on the ground
     private void flip()
     {
         if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
@@ -51,14 +51,6 @@ public class Movement : MonoBehaviour
     {
     jumpingPower = 30;
     }
-    //private void OnCollisionEnter2D(Collision2D other)
-    //{
-    //        if (Input.GetKey("1"))
-    //        {
-    //            SceneManager.LoadScene(1);
-    //        }
-    //}
 }
-//op het bewegende platform mijn positie van de player op dezelfde speed omlaag zetten als het platform zodat je dat gebounc niet krijg
 
 
