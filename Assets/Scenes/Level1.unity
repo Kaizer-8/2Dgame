@@ -1789,13 +1789,13 @@ Transform:
   m_GameObject: {fileID: 293360732}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 50.39, y: -68.48, z: 0}
-  m_LocalScale: {x: 30, y: 4.9999995, z: 0}
+  m_LocalPosition: {x: 0, y: 0.93199927, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1581571324}
   - {fileID: 493745091}
-  m_Father: {fileID: 663753474}
+  m_Father: {fileID: 1713243461}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &293360734
 BoxCollider2D:
@@ -3165,7 +3165,6 @@ Transform:
   - {fileID: 849534373}
   - {fileID: 1292974814}
   - {fileID: 1713243461}
-  - {fileID: 293360733}
   - {fileID: 994610124}
   - {fileID: 111213006}
   - {fileID: 620896348}
@@ -4761,7 +4760,7 @@ Transform:
   m_GameObject: {fileID: 994610123}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 50.39, y: -63.72, z: 0}
+  m_LocalPosition: {x: 50.39, y: -64.21, z: 0}
   m_LocalScale: {x: 30, y: 4.9999995, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7819,12 +7818,13 @@ Transform:
   m_GameObject: {fileID: 1713243460}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 50.39, y: -73.46, z: 0}
+  m_LocalPosition: {x: 50.39, y: -73.27, z: 0}
   m_LocalScale: {x: 30, y: 4.9999995, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1906425033}
   - {fileID: 2139527944}
+  - {fileID: 293360733}
   m_Father: {fileID: 663753474}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1713243462
@@ -10639,6 +10639,10 @@ PrefabInstance:
       propertyPath: m_GravityScale
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3249033365757564848, guid: b6f0a3f69bd3dcb448ac0c289ed725cf, type: 3}
+      propertyPath: isGrounded
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5823443875970205579, guid: b6f0a3f69bd3dcb448ac0c289ed725cf, type: 3}
       propertyPath: m_LocalPosition.x
       value: -97.2
@@ -10685,7 +10689,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6610681229271809606, guid: b6f0a3f69bd3dcb448ac0c289ed725cf, type: 3}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5594428882995854557, guid: b6f0a3f69bd3dcb448ac0c289ed725cf, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6f0a3f69bd3dcb448ac0c289ed725cf, type: 3}

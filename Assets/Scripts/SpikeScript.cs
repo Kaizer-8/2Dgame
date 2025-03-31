@@ -6,10 +6,6 @@ public class SpikeScript : MonoBehaviour
     public GameObject player;
     public Transform respawnpoint;
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
     private void OnCollisionEnter2D(Collision2D other)
     { // checks if the player collids with the spikes and sets the player to the respawnpoint.
         if (other.gameObject.CompareTag("Player"))

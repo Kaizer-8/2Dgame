@@ -2,13 +2,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class FinshLine : MonoBehaviour
 {
-    void Start()
-    {
-        
-    }
-    void Update()
-    {
-    }
     private void OnCollisionStay2D(Collision2D collision)
     { 
     if (Input.GetKey(KeyCode.K))
