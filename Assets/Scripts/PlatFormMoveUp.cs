@@ -6,10 +6,6 @@ public class PlatFormMoveUp : MonoBehaviour
     public float speed = 5f;
     public int index = 0;   
     public Transform[] points;
-    void Start()
-    {
-        
-    }
     private void FixedUpdate()
     {
         transform.position = Vector2.MoveTowards(transform.position, points[index].position,speed * Time.deltaTime);
